@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var flag = Flag(emoji: "🇸🇬", description: "Singapore")
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        TabView{
+            RaisingView(flag: $flag)
+                .tabItem { Label("Flag Raising", systemImage: "arrow.up")}
+            FlagSelectionView(selectedFlag: $flag)
+                .tabItem { Label("Flag Selector", systemImage: "flag.badge.ellipsis.fill")}
+        }
+        
+        
     }
 }
 

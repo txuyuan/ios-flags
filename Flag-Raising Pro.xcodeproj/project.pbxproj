@@ -13,6 +13,10 @@
 		2E12586626E5AD920032954D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E12586526E5AD920032954D /* Preview Assets.xcassets */; };
 		2E12587126E5AD920032954D /* Flag_Raising_ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12587026E5AD920032954D /* Flag_Raising_ProTests.swift */; };
 		2E12587C26E5AD920032954D /* Flag_Raising_ProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12587B26E5AD920032954D /* Flag_Raising_ProUITests.swift */; };
+		2E12588E26E5AF360032954D /* RaisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12588D26E5AF360032954D /* RaisingView.swift */; };
+		2E12589026E5AF3F0032954D /* FlagSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12588F26E5AF3F0032954D /* FlagSelectionView.swift */; };
+		2E12589226E5B7B70032954D /* FlagData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E12589126E5B7B70032954D /* FlagData.json */; };
+		2E12589426E5B7C90032954D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12589326E5B7C90032954D /* Flag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		2E12587726E5AD920032954D /* Flag-Raising ProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flag-Raising ProUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E12587B26E5AD920032954D /* Flag_Raising_ProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag_Raising_ProUITests.swift; sourceTree = "<group>"; };
 		2E12587D26E5AD920032954D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E12588D26E5AF360032954D /* RaisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisingView.swift; sourceTree = "<group>"; };
+		2E12588F26E5AF3F0032954D /* FlagSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagSelectionView.swift; sourceTree = "<group>"; };
+		2E12589126E5B7B70032954D /* FlagData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FlagData.json; path = ../../../../../Downloads/FlagData.json; sourceTree = "<group>"; };
+		2E12589326E5B7C90032954D /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				2E12585E26E5AD8F0032954D /* Flag_Raising_ProApp.swift */,
 				2E12586026E5AD8F0032954D /* ContentView.swift */,
+				2E12588D26E5AF360032954D /* RaisingView.swift */,
+				2E12589326E5B7C90032954D /* Flag.swift */,
+				2E12588F26E5AF3F0032954D /* FlagSelectionView.swift */,
+				2E12589126E5B7B70032954D /* FlagData.json */,
 				2E12586226E5AD920032954D /* Assets.xcassets */,
 				2E12586726E5AD920032954D /* Info.plist */,
 				2E12586426E5AD920032954D /* Preview Content */,
@@ -234,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E12586626E5AD920032954D /* Preview Assets.xcassets in Resources */,
+				2E12589226E5B7B70032954D /* FlagData.json in Resources */,
 				2E12586326E5AD920032954D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E12586126E5AD8F0032954D /* ContentView.swift in Sources */,
+				2E12589026E5AF3F0032954D /* FlagSelectionView.swift in Sources */,
+				2E12589426E5B7C90032954D /* Flag.swift in Sources */,
+				2E12588E26E5AF360032954D /* RaisingView.swift in Sources */,
 				2E12585F26E5AD8F0032954D /* Flag_Raising_ProApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
