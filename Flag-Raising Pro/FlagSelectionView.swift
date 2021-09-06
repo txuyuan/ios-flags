@@ -22,11 +22,11 @@ struct FlagSelectionView: View {
         
         NavigationView{
             ScrollView{
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]){
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]){
                     ForEach(flags){ flag in
                         VStack{
                             Text(flag.emoji)
-                                .font(.system(size: 70))
+                                .font(.system(size: 80))
                             Text(flag.description)
                                 .font(.caption)
                                 .multilineTextAlignment(.center)
@@ -38,8 +38,8 @@ struct FlagSelectionView: View {
                             selectedFlag = flag
                         }
                     }
-                }
-            }
+                }.padding(.init(top: 0, leading: 18, bottom: 0, trailing: 18))
+            }.navigationTitle("Chooseth thy flag")
         }
         
         

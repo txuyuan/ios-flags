@@ -10,7 +10,7 @@ import SwiftUI
 struct RaisingView: View {
     
     @Binding var flag: Flag
-    @AppStorage("flagOffset") var yOffset: Double = 20.0
+    @AppStorage("flagOffset") var yOffset: Double = 21.0
     
     var body: some View {
         
@@ -27,26 +27,29 @@ struct RaisingView: View {
             Spacer().frame(height:50)
             
             HStack{
-                Button("Raise!"){
+                Button("Raise"){
                     if(yOffset > -350){
-                        withAnimation(.easeInOut(duration: 0.4)) {
-                            yOffset -= 35
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            yOffset -= 55
                         }
                     }
-                }.frame(width: 115, height:50)
+                }.font(Font.system(size: 20, weight: .bold, design: .rounded))
+                .frame(width: 140, height:50)
                 .foregroundColor(Color.white)
                 .background(Color.gray)
                 .cornerRadius(6.0)
                 
-                Spacer().frame(width: 30)
+                Spacer().frame(width: 24)
                 
                 Button("Reset"){
                     withAnimation(.easeInOut(duration: 0.6)){
-                        yOffset = 20.0
+                        yOffset = 21.0
                     }
-                }.frame(width: 115, height:50)
+                }
+                .font(Font.system(size: 20, weight: .bold, design: .rounded))
+                .frame(width: 95, height:50)
                 .foregroundColor(Color.white)
-                .background(Color.gray)
+                .background(Color.red.opacity(0.7))
                 .cornerRadius(6.0)
             }
             
